@@ -1,0 +1,9 @@
+data/
+notebooks/
+streamlit_app.py
+requirements-dev.txt
+README.md
+.git/
+.venv/
+__pycache__/
+*.ipynb

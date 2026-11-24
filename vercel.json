@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "app.py": {
+      "excludeFiles": "{data/**,notebooks/**,streamlit_app.py,requirements-dev.txt,README.md}"
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",
