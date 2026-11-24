@@ -178,14 +178,23 @@ jupyter notebook notebooks/churn.ipynb
 ```
 *(Run all cells sequentially: `Kernel` → `Restart & Run All`)*.
 
-### 3. Launch the Streamlit Web Application
+### 3. Launch the Web Application
 
-To launch the interactive customer risk scoring dashboard:
+The project supports both cloud serverless deployment on **Vercel (FastAPI)** and local interactive exploration with **Streamlit**:
 
+#### A. Vercel Serverless Web App (FastAPI)
+The production entrypoint `app.py` is configured as a high-performance FastAPI ASGI application compatible with Vercel Serverless Functions and includes an interactive Tailwind CSS interface:
 ```bash
-streamlit run app.py
+# Run locally with Uvicorn:
+uvicorn app:app --reload --port 8000
 ```
+Open `http://localhost:8000` to interact with the dashboard, or `http://localhost:8000/docs` for the interactive Swagger API documentation.
 
+#### B. Streamlit Application
+To launch the original Streamlit dashboard:
+```bash
+streamlit run streamlit_app.py
+```
 Open your browser at `http://localhost:8501`.
 
 #### App Features:
