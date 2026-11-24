@@ -1,0 +1,24 @@
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
